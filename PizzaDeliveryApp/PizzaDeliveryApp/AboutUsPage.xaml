@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PizzaDeliveryApp.AboutUsPage"
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="Beige">
+               
+
+                <StackLayout Padding="20" Spacing="20">
+
+                    <Label
+                        Text="Get to know us!!"
+                        FontSize="Large"
+                        BackgroundColor="DarkOrange"
+                        TextColor="Beige"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        HorizontalOptions="Center"
+                        WidthRequest="500" 
+                        HeightRequest="50"/>
+
+
+
+                    <Label Text="Welcome to Yummy pizza, where every slice tells a story! Step into our cozy pizzeria and experience the authentic flavors of Italy right in the heart of alkhober. From classic Margherita to adventurous BBQ Chicken, our handcrafted pizzas are made with the freshest ingredients and baked to perfection in our wood-fired oven. Whether you're dining in with family and friends or grabbing a quick takeaway, our warm hospitality and mouthwatering pizzas will leave you craving for more. Come savor the taste of tradition at Yummy pizza today!"
+                       FontSize="Medium"
+                       HorizontalTextAlignment="Center"/>
+
+
+                    <Label Text="visit Us!!"
+                       FontSize="Large"
+                       BackgroundColor="DarkOrange"
+                       TextColor="Beige"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       HorizontalOptions="Center"
+                       WidthRequest="500" 
+                       HeightRequest="50"/>
+
+                    <map:Map 
+                    x:Name="map"
+                    WidthRequest="320"
+                    HeightRequest="200"
+                    IsShowingUser="true"
+                    VerticalOptions="FillAndExpand"
+                    MapType="Street">
+
+                    </map:Map>
+
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

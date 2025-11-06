@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PizzaDeliveryApp"
+             x:Class="PizzaDeliveryApp.HomeContentPage">
+
+    <Grid BackgroundColor="Beige">
+
+    <ScrollView>
+
+            
+            <Grid Padding="10" RowSpacing="10">
+                
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="200" />
+
+
+            </Grid.RowDefinitions>
+                
+             <Image Source="logo" Grid.Row="0"/>
+
+            <!-- Product 1 -->
+            <Frame Grid.Row="1" CornerRadius="10" BorderColor="LightGray" BackgroundColor="White" BindingContext="{Binding Pizza1}" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="pizza1" Grid.Column="0" Aspect="AspectFit">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnProductTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <StackLayout Grid.Column="1" Padding="10" VerticalOptions="Center">
+                        <Label Text="Pepperoni Pizza" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="Classic pepperoni pizza" FontSize="Small" />
+                        <Label Text="$10.99" FontSize="Medium" FontAttributes="Bold" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+            <!-- Product 2 -->
+            <Frame Grid.Row="1" CornerRadius="10" BorderColor="LightGray" BackgroundColor="White" BindingContext="{Binding Pizza2}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="pizza2" Grid.Column="0" Aspect="AspectFit">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnProductTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <StackLayout Grid.Column="1" Padding="10" VerticalOptions="Center">
+                        <Label Text="Margherita Pizza" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="Simple and delicious" FontSize="Small" />
+                        <Label Text="$12.99" FontSize="Medium" FontAttributes="Bold" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+            <!-- Product 3 -->
+            <Frame Grid.Row="2" CornerRadius="10" BorderColor="LightGray" BackgroundColor="White" BindingContext="{Binding Pizza3}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="pizza3" Grid.Column="0" Aspect="AspectFit">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnProductTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <StackLayout Grid.Column="1" Padding="10"  VerticalOptions="Center">
+                        <Label Text="Vegetarian Pizza" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="Loaded with fresh vegetables" FontSize="Small" />
+                        <Label Text="$14.99" FontSize="Medium" FontAttributes="Bold" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+            <!-- Product 4 -->
+            <Frame Grid.Row="3" CornerRadius="10" BorderColor="LightGray" BackgroundColor="White" BindingContext="{Binding Pizza4}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="pizza4" Grid.Column="0" Aspect="AspectFit">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnProductTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <StackLayout Grid.Column="1" Padding="10" VerticalOptions="Center">
+                            <Label Text="BBQ Chicken Pizza" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="classic BBQ pizza that we all love" FontSize="Small" />
+                        <Label Text="$16.99" FontSize="Medium" FontAttributes="Bold" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+            <!-- Product 5 -->
+            <Frame Grid.Row="4" CornerRadius="10" BorderColor="LightGray" BackgroundColor="White" BindingContext="{Binding Pizza5}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="pizza5" Grid.Column="0" Aspect="AspectFit">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnProductTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <StackLayout Grid.Column="1" Padding="10"  VerticalOptions="Center">
+                        <Label Text="Supreme Pizza" FontSize="Title" FontAttributes="Bold" />
+                        <Label Text="All the toppings you love" FontSize="Small" />
+                        <Label Text="$18.99" FontSize="Medium" FontAttributes="Bold" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+        </Grid>
+    </ScrollView>
+
+    <Grid VerticalOptions="End" HorizontalOptions="End" Padding="10">
+        <ImageButton Source="cart_icon" BackgroundColor="Transparent"
+                         HeightRequest="80" WidthRequest="80"
+                         Clicked="OnCartButtonClicked" />
+    </Grid>
+</Grid>
+</ContentPage>

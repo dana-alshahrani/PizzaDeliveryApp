@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PizzaDeliveryApp"
+             x:Class="PizzaDeliveryApp.MainPage"
+             BarBackgroundColor="DarkOrange"
+             BarTextColor="White"
+            >
+
+
+
+    <NavigationPage Title="Home" IconImageSource="https://pngteam.com/images/home-png-981x954_f443146a_transparent_202534.png.png">
+        <x:Arguments>
+            <local:HomeContentPage />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="About us" IconImageSource="https://softricksolutions.com/wp-content/uploads/2020/09/400-team-members.png">
+            <x:Arguments>
+                <local:AboutUsPage />
+            </x:Arguments>
+        </NavigationPage>
+    
+
+</TabbedPage>

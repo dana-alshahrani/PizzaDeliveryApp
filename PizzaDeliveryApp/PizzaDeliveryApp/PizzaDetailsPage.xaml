@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PizzaDeliveryApp"
+             x:Class="PizzaDeliveryApp.PizzaDetailsPage">
+
+    <StackLayout Padding="20" BackgroundColor="Beige" >
+
+        <Image x:Name="imgPizza" WidthRequest="300"  />
+
+        <Label x:Name="lblPizzaName" FontSize="Large" Margin="0,20,0,0" HorizontalOptions="Center" />
+
+        <Label x:Name="lblDescription" FontSize="Medium" Margin="0,10,0,0" HorizontalOptions="Center"/>
+
+        <Label x:Name="lblPrice" FontSize="Medium" Margin="0,10,0,0" HorizontalOptions="Center"/>
+
+        <Button Text="Order!" BackgroundColor="DarkOrange" Clicked="OnAddToCartClicked" />
+    </StackLayout>
+
+</ContentPage>
